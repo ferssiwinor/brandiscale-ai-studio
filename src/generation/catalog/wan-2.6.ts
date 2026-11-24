@@ -6,6 +6,12 @@ export const wan26 = {
   ...base,
   settings: {
     ...base.settings,
-    duration: { type: "range", min: 5, max: 15, step: 5, default: 5 },
+    duration: {
+      type: "range" as const,
+      min: 5,
+      max: 15,
+      step: 5,
+      default: 5,
+    },
   },
 };
